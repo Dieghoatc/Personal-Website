@@ -1,15 +1,52 @@
 ---
+import "./index.css";
+import Nav from "../components/navbar/navbar.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Dieghoatc</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <h1 style="color:red">Logo</h1>
+        </div>
+        <div class="navbar">
+          <nav>
+            <ol>
+              <Nav title="ABOUT" />
+              <Nav title="PORTFOLIO" />
+              <Nav title="CONTACT" />
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
+
+<style>
+  nav {
+    color: #b1b1b1;
+  }
+  ol {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 10px;
+  }
+</style>

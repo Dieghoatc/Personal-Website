@@ -1,0 +1,27 @@
+.about {
+  display: flex;
+  gap: 10px;
+}
+.arrow {
+  font-size: 8px;
+  transition: 1s;
+  transform: rotate(120deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.nav-text:hover {
+  color: #bcbc38;
+  transition: 1s;
+}
+
+li {
+  cursor: pointer;
+}
+li:hover .arrow {
+  color: #fff8d9;
+  visibility: inherit;
+  transition: 1s;
+  transform: rotate(90deg);
+  opacity: 1;
+}
