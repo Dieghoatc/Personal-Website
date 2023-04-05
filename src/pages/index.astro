@@ -1,6 +1,8 @@
 ---
 import "./index.css";
 import Nav from "../components/navbar/navbar.astro";
+import MainProfile from "../components/main/main.astro";
+import Logo from "../assets/logo.svg";
 ---
 
 <html lang="en">
@@ -15,7 +17,7 @@ import Nav from "../components/navbar/navbar.astro";
     <header>
       <div class="wrapper">
         <div class="logo">
-          <h1 style="color:red">Logo</h1>
+          <img src={Logo} alt="Logo" />
         </div>
         <div class="navbar">
           <nav>
@@ -28,6 +30,11 @@ import Nav from "../components/navbar/navbar.astro";
         </div>
       </div>
     </header>
+    <main>
+      <section>
+        <MainProfile />
+      </section>
+    </main>
   </body>
 </html>
 
@@ -48,5 +55,10 @@ import Nav from "../components/navbar/navbar.astro";
     display: grid;
     grid-template-columns: 60% 40%;
     margin: 10px;
+  }
+
+  img {
+    width: 80px;
+    margin: ;
   }
 </style>

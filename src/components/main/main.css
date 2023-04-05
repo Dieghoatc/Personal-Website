@@ -1,0 +1,29 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.photo-profile {
+  grid-column: 1;
+}
+.description-profile {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 30px;
+  letter-spacing: 26px;
+}
+
+p {
+  margin-top: 10px;
+  margin-right: 40px;
+  letter-spacing: 4px;
+}
