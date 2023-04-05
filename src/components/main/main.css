@@ -5,25 +5,61 @@
 }
 .photo-profile {
   grid-column: 1;
+  position: relative;
 }
+
+.photo-profile:after {
+  position: absolute;
+  content: "";
+  top: 150px;
+  left: 50px;
+  z-index: -1;
+  height: 120%;
+  width: 117%;
+  margin: 0 auto;
+  transform: scale(0.8) rotate(-10deg);
+}
+
+.photo-profile:after {
+  filter: blur(5vw);
+  background: linear-gradient(270deg, #171817, #ffdd01);
+  background-size: 200% 200%;
+}
+
+.image-dieghoatc {
+  width: 100%;
+  transform: rotate(-10deg);
+  border-top-right-radius: 50px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  top: 130px;
+  left: 123px;
+}
+
 .description-profile {
   grid-column: 2;
-  display: flex;
-  flex-direction: column;
-  place-content: center;
+  text-align: end;
+  padding-top: 178px;
+  z-index: 2;
 }
 
 h1 {
   font-size: 60px;
-  letter-spacing: 1px;
+  letter-spacing: 22px;
 }
 h3 {
-  font-size: 30px;
+  font-size: 37px;
   letter-spacing: 26px;
 }
 
 p {
   margin-top: 10px;
-  margin-right: 40px;
   letter-spacing: 4px;
+}
+
+.name-description {
+  /* color: rgb(157, 3, 3); */
+  color: goldenrod;
+  font-weight: bold;
 }

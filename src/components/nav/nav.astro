@@ -1,0 +1,20 @@
+---
+import Nav from "../nav/components/navbar/navbar.astro";
+import Logo from "../../assets/logo.svg";
+import "./nav.css";
+---
+
+<div class="wrapper-nav">
+  <div class="logo">
+    <img class="logo" src={Logo} alt="Logo" />
+  </div>
+  <div class="navbar">
+    <nav>
+      <ol>
+        <Nav title="ABOUT" />
+        <Nav title="PORTFOLIO" />
+        <Nav title="CONTACT" />
+      </ol>
+    </nav>
+  </div>
+</div>

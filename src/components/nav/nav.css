@@ -1,0 +1,27 @@
+nav {
+  color: #b1b1b1;
+}
+ol {
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.wrapper-nav {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 10px;
+}
+
+.logo {
+  width: 80px;
+  margin: 10px;
+  transition: 1s;
+}
+.logo:hover {
+  transition: 1s;
+  transform: rotate(15deg);
+}

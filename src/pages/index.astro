@@ -1,8 +1,7 @@
 ---
 import "./index.css";
-import Nav from "../components/navbar/navbar.astro";
+import Nav from "../components/nav/nav.astro";
 import MainProfile from "../components/main/main.astro";
-import Logo from "../assets/logo.svg";
 ---
 
 <html lang="en">
@@ -14,51 +13,25 @@ import Logo from "../assets/logo.svg";
     <title>Dieghoatc</title>
   </head>
   <body>
-    <header>
-      <div class="wrapper">
-        <div class="logo">
-          <img src={Logo} alt="Logo" />
-        </div>
-        <div class="navbar">
-          <nav>
-            <ol>
-              <Nav title="ABOUT" />
-              <Nav title="PORTFOLIO" />
-              <Nav title="CONTACT" />
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section>
-        <MainProfile />
-      </section>
-    </main>
+    <div class="container">
+      <header>
+        <Nav />
+      </header>
+      <main>
+        <section>
+          <MainProfile />
+        </section>
+      </main>
+    </div>
   </body>
 </html>
 
 <style>
-  nav {
-    color: #b1b1b1;
+  .container {
+    max-width: 1536px;
   }
-  ol {
-    margin: 10px;
-    list-style: none;
+  main {
     display: flex;
-    justify-content: space-around;
-    font-weight: bold;
-    font-size: 13px;
-  }
-
-  .wrapper {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    margin: 10px;
-  }
-
-  img {
-    width: 80px;
-    margin: ;
+    place-content: center;
   }
 </style>
