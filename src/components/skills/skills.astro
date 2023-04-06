@@ -1,0 +1,22 @@
+---
+import "./skills.css";
+import { developmentTecnologies } from "./skills";
+import Progressbar from "./progressbar/progressbar.astro";
+---
+
+<div class="skills-container">
+  <h4 class="skills-title">SKILLS</h4>
+  {
+    developmentTecnologies.map(({ name, icon, progress }) => {
+      return (
+        <div class="list-tech">
+          <Progressbar progress={progress} />
+          <div class="info-tech">
+            <h6 class="text-tech">{name}</h6>
+            <img class="icon-tech" src={icon} alt={name} />
+          </div>
+        </div>
+      );
+    })
+  }
+</div>

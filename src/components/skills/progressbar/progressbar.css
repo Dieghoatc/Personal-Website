@@ -1,0 +1,123 @@
+.progress-bar {
+  width: 100%;
+  border-radius: 30px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.progress {
+  width: 20%;
+  background-color: goldenrod;
+  border-radius: 30px;
+  height: 2px;
+  border: 2px solid goldenrod;
+  z-index: 2;
+  animation-duration: 5s;
+
+  animation-fill-mode: forwards;
+}
+.progress10 {
+  animation-name: progress10;
+}
+
+@keyframes progress10 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 10%;
+  }
+}
+
+.progress20 {
+  animation-name: progress20;
+}
+
+@keyframes progress20 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+.progress30 {
+  animation-name: progress30;
+}
+.progress40 {
+  animation-name: progress40;
+}
+
+@keyframes progress40 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}
+.progress50 {
+  animation-name: progress50;
+}
+
+@keyframes progress50 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.progress60 {
+  animation-name: progress60;
+}
+
+@keyframes progress60 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+.progress70 {
+  animation-name: progress70;
+}
+
+@keyframes progress70 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+.progress80 {
+  animation-name: progress80;
+}
+
+@keyframes progress80 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.progress90 {
+  animation-name: progress90;
+}
+
+@keyframes progress90 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}

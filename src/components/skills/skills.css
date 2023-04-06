@@ -1,0 +1,30 @@
+.skills-container {
+  width: 100%;
+  padding: 15px 0 0 15px;
+  border-top: 1px solid goldenrod;
+  border-left: 1px solid goldenrod;
+  border-radius: 15px;
+}
+.skills-title {
+  margin-bottom: 40px;
+  letter-spacing: 20px;
+  text-align: end;
+}
+
+.list-tech {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.info-tech {
+  display: flex;
+  justify-content: flex-end;
+}
+.icon-tech {
+  width: 25px;
+  margin: 0 8px 10px 8px;
+}
+
+.text-tech {
+  margin-top: 5px;
+}

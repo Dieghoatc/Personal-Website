@@ -1,0 +1,26 @@
+.about-container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 0 15px 25px 0;
+  border-bottom-right-radius: 15px;
+  border-right: goldenrod 1px solid;
+  border-bottom: goldenrod 1px solid;
+}
+
+.about-title {
+  letter-spacing: 20px;
+}
+
+.about-description {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.react-color {
+  color: #087ea4;
+  font-size: 14px;
+}
+
+.typescriot-color {
+  color: #3178c6;
+}

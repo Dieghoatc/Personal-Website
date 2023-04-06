@@ -1,0 +1,12 @@
+---
+import "./progressbar.css";
+
+interface Props {
+  progress: number;
+}
+const { progress } = Astro.props;
+---
+
+<div class="progress-bar">
+  <div class={`progress progress${progress}`}></div>
+</div>
