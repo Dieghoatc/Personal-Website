@@ -11,7 +11,6 @@
 }
 
 .nav-text:hover {
-  color: #bcbc38;
   transition: 1s;
 }
 
@@ -24,4 +23,15 @@ li:hover .arrow {
   transition: 1s;
   transform: rotate(90deg);
   opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 1.5s;
+}
+a:hover {
+  text-decoration: none;
+  color: #bcbc38;
+  transition: 1.5s;
 }

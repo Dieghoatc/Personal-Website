@@ -96,6 +96,6 @@ export const developmentTecnologies: tecnoType[] = [
     id: 13,
     name: "Python",
     icon: pythonLogo,
-    progress: 40,
+    progress: 20,
   },
 ];
