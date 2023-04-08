@@ -15,4 +15,5 @@ body {
   color: white;
   display: flex;
   place-content: center;
+  padding: 15px;
 }

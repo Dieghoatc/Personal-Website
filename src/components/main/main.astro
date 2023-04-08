@@ -1,20 +1,36 @@
 ---
 import "./main.css";
 import Dieghoatc from "../../assets/dieghoatc.png";
+import Github from "../../assets/github-white.png";
+import Linkedin from "../../assets/linkedin-white.png";
+import Instagram from "../../assets/instagram-white.png";
 ---
 
 <div class="main-profile-container">
-  <div class="photo-profile">
+  <div class="profile">
     <div class="photo-wrapper">
       <img class="image-dieghoatc" src={Dieghoatc} alt="dieghoatc" />
       <p class="photo-description">@Dieghoatc - 2023 Australian Grand Prix</p>
     </div>
+    <div class="social-media">
+      <h1 class="title">Dieghoatc</h1>
+      <a href="https://github.com/Dieghoatc"
+        ><img class="icon" src={Github} alt="Github" /></a
+      >
+      <a href="https://co.linkedin.com/in/dieghoatc"
+        ><img class="icon" src={Linkedin} alt="Github" /></a
+      >
+      <a href="https://www.instagram.com/dieghoatc/"
+        ><img class="icon" src={Instagram} alt="Github" /></a
+      >
+    </div>
   </div>
   <div class="description-profile">
-    <h1>SOFTWARE</h1>
+    <h2>SOFTWARE</h2>
     <h3>DEVELOPER</h3>
+    <p>Welcome to my website,</p>
     <p>
-      Welcome to my website, I'm
+      I'm
       <b class="gold-color">Diego Armando</b>, I'm focused on improving
       responsive graphical interfaces and providing solutions by understanding
       user behavior.

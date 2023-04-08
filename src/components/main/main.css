@@ -1,10 +1,10 @@
 .main-profile-container {
   display: grid;
   grid-template-columns: 1fr;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .main-profile-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,14 +12,24 @@
   }
 }
 
-.photo-profile {
+.profile {
   grid-column: 1/3;
   box-shadow: -18px 14px 18px -17px rgba(227, 209, 12, 0.75);
   border-radius: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
 }
 
 .photo-wrapper {
-  margin: 80px 0 0 80px;
+  margin: 0px 0 0 5px;
+}
+
+@media (min-width: 769px) {
+  .photo-wrapper {
+    margin: 80px 0 0 80px;
+  }
 }
 
 .photo-description {
@@ -27,19 +37,41 @@
 }
 
 .image-dieghoatc {
-  max-width: 60%;
+  width: 100%;
   height: auto;
   border-radius: 15px;
+}
+
+@media (min-width: 769px) {
+  .image-dieghoatc {
+    width: 60%;
+  }
 }
 
 .description-profile {
   grid-column: 2;
   grid-row: 2;
   text-align: end;
-  z-index: 2;
 }
 
-h1 {
+.social-media {
+  display: flex;
+  place-content: center;
+  padding-top: 50px;
+}
+
+.icon {
+  width: 15px;
+  margin: 0 15px;
+}
+
+.title {
+  color: goldenrod;
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+
+h2 {
   font-size: 60px;
   letter-spacing: 22px;
 }
@@ -48,6 +80,19 @@ h3 {
   letter-spacing: 26px;
 }
 
+@media (max-width: 769px) {
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 13px;
+    letter-spacing: 20px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+}
 p {
   margin-top: 10px;
   letter-spacing: 4px;
