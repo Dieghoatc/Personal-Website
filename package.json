@@ -11,7 +11,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "astro": "^2.1.8"
+    "@astrojs/vercel": "^3.2.2",
+    "astro": "^2.2.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.57.0",
